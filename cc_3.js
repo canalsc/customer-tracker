@@ -34,7 +34,9 @@ customers[0].email = "chosen.one@gmail.com"
 customers[0].purchases.push("dark robes");
 
 //Display Customer Information 
-customers.forEach(function(Customers) {
-        console.log(`"Customers", ${customers}`);
+customers.forEach(function(customers) {
+        console.log("Name:", customers.name),
+        console.log("Email:", customers.email), 
+        console.log("Total Number of Purchases:", customers.purchases);
     }
 );
