@@ -24,5 +24,17 @@ customers.push(
         email: "kenobi.jedi@gmail.com", 
         purchases: ["beard conditioner", "sunscreen", "light robes"]
     } 
-) 
-customers.shift("kylo Ren")
+); 
+
+customers.shift(); 
+
+//Update Anakin Skywalker's Customer Info 
+customers[0].email = "chosen.one@gmail.com"  
+
+customers[0].purchases.push("dark robes");
+
+//Display Customer Information 
+customers.forEach(function(Customers) {
+        console.log(`"Customers", ${customers}`);
+    }
+);
